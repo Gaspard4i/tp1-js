@@ -92,14 +92,14 @@ const serieName = 'Better Call ' + lawyer;
 	```js
 	const lawyer = 'Saul';
 	const critic = 'better';
-	console.log('Better call ' + lawyer + ' is ' + critic + ' than Breaking Bad')
+	console.log('Better call ' + lawyer + ' is ' + critic + ' than Breaking Bad');
 	```
 	> _On voit un peu ici les limites de cette technique : il faut systématiquement fermer la chaîne, ajouter le `+`, la valeur, puis remettre un `+` et rouvrir la chaîne. C'est pénible._
 2. Utiliser les **"template strings"** (_chaînes déclarées avec des accents graves_) :
 	```js
 	const lawyer = 'Saul';
 	const critic = 'better';
-	console.log(`Better call ${lawyer} is ${critic} than Breaking Bad')
+	console.log(`Better call ${lawyer} is ${critic} than Breaking Bad`);
 	```
 
 **De manière générale, je vous recommande vivement de préférer dans vos projets les template strings plutôt que la concaténation !**
@@ -125,9 +125,9 @@ console.log(
 
     serie.toUpperCase(), // ??
 
-	serie.replace('e', 'u'), // ??
+    serie.replace('e', 'u'), // ??
 
-	serie.replaceAll('e', 'u'), // ??
+    serie.replaceAll('e', 'u'), // ??
 );
 ```
 

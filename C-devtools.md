@@ -24,10 +24,10 @@ console.log('Welcome to ', {title:'JSteam', emoji: '🎮'});
 Puis rechargez la page pour voir le résultat dans la console du navigateur.
 
 En fait "`console`" est un objet global qui contient la méthode `.log()` mais aussi d'autres méthodes qui permettent d'avoir un rendu différent et de filtrer les messages. Essayez les méthodes suivantes et constatez le résultat dans la console :
-- `console.warn('Oh oh attention')`
-- `console.error('fatal error lol')`
-- `console.clear()`
-- `console.table([['Walter','White'],['Skyler','White'],['Saul','Goodman']])`
+- `console.warn('Oh oh attention');`
+- `console.error('fatal error lol');`
+- `console.clear();`
+- `console.table([['Walter','White'],['Skyler','White'],['Saul','Goodman']]);`
 
 Enfin, **la console permet de tester rapidement du code JS grâce à un champ de saisie**. Tapez-y l'instruction `42+"12"-10` puis <kbd>Entrée</kbd>. \
 Le résultat s'affiche directement dans la console. Incroyable !

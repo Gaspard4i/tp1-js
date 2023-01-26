@@ -5,7 +5,7 @@
 ## Sommaire <!-- omit in toc -->
 - [E.1. Les tableaux en JS](#e1-les-tableaux-en-js)
 - [E.2. Manipulation des tableaux](#e2-manipulation-des-tableaux)
-- [E.2. Les Objets littéraux](#e2-les-objets-littéraux)
+- [E.2. Les objets littéraux](#e2-les-objets-littéraux)
 
 ## E.1. Les tableaux en JS
 
@@ -27,11 +27,11 @@ const ingredients = ['methanol', 'red phosphorus'];
 console.log(
     ingredients.length, // ?
 
-	ingredients.push( 'pseudo' ), // ?
+    ingredients.push( 'pseudo' ), // ?
 
-	ingredients, // ?
+    ingredients, // ?
 
-	ingredients.join(' and '), // ?
+    ingredients.join(' and '), // ?
 );
 ```
 
@@ -74,7 +74,7 @@ Le résultat obtenu sera identique dans les 4 cas :
 
 <img src="images/readme/screen-array.png" />
 
-## E.2. Les Objets littéraux
+## E.2. Les objets littéraux
 
 **Maintenant que l'on sait manipuler les chaînes de caractères et les tableaux, attaquons-nous aux [objets littéraux (_mdn_)](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Grammar_and_types#les_litt%C3%A9raux_dobjets) !**
 

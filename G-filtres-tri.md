@@ -44,7 +44,7 @@ const { firstName, lastName, age } = character;
 
 Pour que ça marche, il faut bien sûr que les constantes qu'on crée (_ici `firstName`, etc._) aient exactement le même nom que les propriétés de l'objet qu'on décompose (_même si un [système d'alias existe](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition#Affecter_avec_un_nom_diff%C3%A9rent)_).
 
-Dans les 2 situation (avec et sans destructuring) le résultat est le même : on crée au final trois constantes, dont les valeurs sont celles des propriétés de l'objet `character`.
+Dans les 2 situations (avec et sans destructuring) le résultat est le même : on crée au final trois constantes, dont les valeurs sont celles des propriétés de l'objet `character`.
 
 > _**NB :** le destructuring fonctionne avec des `const` comme dans les exemples ci-dessus mais bien entendu aussi avec des `let` !_
 
