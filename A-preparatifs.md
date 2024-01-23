@@ -14,9 +14,7 @@
 **Avant de démarrer le TP il va vous falloir faire quelques installs et configurations.** Selon que vous utilisez une machine de l'Université ou votre propre ordinateur la situation n'est pas la même :
 
 ### Si vous êtes sur une machine des salles TP de l'IUT <!-- omit in toc -->
-Dans ce cas, un certain nombre de logiciels sont déjà pré-installés (notamment Git et VSCode) mais vous aurez quand même besoin :
-- de configurer le **proxy** de l'Université
-- d'installer une version de **NodeJS** plus récente que celle fournie sur les machines
+Dans ce cas, un certain nombre de logiciels sont déjà pré-installés (notamment Git et VSCode) mais vous aurez quand même besoin d'installer une version de **NodeJS** plus récente que celle fournie de base sur les machines.
 
 Suivez donc [ce tuto spécifique aux machines des salles TP de l'IUT](A-preparatifs-linux.md) puis revenez suivre la suite du TP ici.
 
