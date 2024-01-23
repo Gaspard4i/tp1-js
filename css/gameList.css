@@ -76,7 +76,7 @@
 	cursor: pointer;
 	transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.searchForm button[type=submit]:not(:disabled)hover {
+.searchForm button[type=submit]:not(:disabled):hover {
 	filter: brightness(1.1);
 }
 .searchForm button[type=submit]:disabled {
