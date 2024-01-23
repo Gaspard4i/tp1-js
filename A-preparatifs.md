@@ -56,7 +56,7 @@ _**Allons-y !**_
 2. **Ajoutez votre encadrant.e de TP en tant que "reporter" pour qu'il/elle ait accès à votre code :**
 	- dans le menu de gauche, cliquez sur **`Manage`** &gt; **`Members`** (`Gestion` &gt; `Membres` _si vous êtes sur la VF de gitlab_)
 	- cliquez sur le bouton en haut à droite **`"Invite members"`** (`Inviter des membres`)
-	- entrez comme **nom d'utilisateur** celui de votre encadrant de TP (`@patricia.everaere-caillier`, `@catherine.verbrugge` ou `@thomas.fritsch`)
+	- entrez comme **nom d'utilisateur** celui de votre encadrant.e de TP (`@patricia.everaere-caillier`, `@catherine.verbrugge` ou `@thomas.fritsch`)
 	- ... et `"reporter"` comme **rôle**.
 
 3. **Ouvrez un terminal** *(si vous êtes sous Windows, utilisez **Git bash** installé automatiquement avec Git)*
