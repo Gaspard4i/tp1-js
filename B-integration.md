@@ -39,11 +39,11 @@ On pourrait, pour cet exercice, utiliser n'importe quel serveur http (apache, to
 
 **Ce repo est fourni avec un fichier `src/main.js` qu'il va falloir intégrer dans la page html.**
 
-Ouvrez le d'abord dans VSCodium pour voir à quoi il ressemble à l'aide du raccourci <kbd>CTRL</kbd>+<kbd>P</kbd>, tapez ensuite simplement son nom dans le panneau qui s'est ouvert puis utilisez les flèches directionnelles et la touche `Entrée` pour valider.
+Ouvrez-le d'abord dans VSCodium pour voir à quoi il ressemble à l'aide du raccourci <kbd>CTRL</kbd>+<kbd>P</kbd>, tapez ensuite simplement son nom dans le panneau qui s'est ouvert puis utilisez les flèches directionnelles et la touche `Entrée` pour valider.
 
 **Incluez ensuite le fichier `src/main.js` dans le fichier `index.html`** à l'aide d'une balise `<script>`.
 
-> _**NB :** il existe plusieurs manières d'intégrer du code JavaScript dans une page HTML :_
+> _**NB :** Pour rappel, il existe plusieurs manières d'intégrer du code JavaScript dans une page HTML :_
 > - _**en "inline"** c'est-à-dire directement dans les attributs d'une balise. Dans l'exemple ci-dessous, le code JS s'exécutera lorsque l'utilisateur cliquera sur le lien :_
 >	```html
 >	<a href="#" onclick="alert('Welcome to Albuquerque');return false;">
