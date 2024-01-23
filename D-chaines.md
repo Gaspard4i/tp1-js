@@ -70,11 +70,11 @@ const s2 = "je suis une chaîne avec des double quotes";
 const s3 = `Je suis une chaîne avec des accents graves`;
 ```
 
-Pour les 2 premières syntaxes, il n'y a aucune différence du point de vue technique. La seule différence, c'est que dans une chaîne délimitée par des guillemets simples, vous devrez échapper les guillemets simples que vous voulez insérer dans la chaîne (`'J\'ai faim'`) et inversement dans les chaîne délimitées par des guillemets doubles (`"Ce TP est \"super\" !"`).
+Pour les 2 premières syntaxes, il n'y a aucune différence du point de vue technique. La seule différence, c'est que dans une chaîne délimitée par des guillemets simples, vous devrez échapper les guillemets simples que vous voulez insérer dans la chaîne (`'J\'ai faim'`) et inversement dans les chaînes délimitées par des guillemets doubles (`"Ce TP est \"super\" !"`).
 
 La 3e syntaxe appelée [**"template strings"** (_mdn_)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) est en revanche **très différente** des 2 autres car elle permet de faire des choses dont les autres sont incapables :
 - déclarer des chaînes de caractères **multi-lignes**
-- **mais surtout d'injecter dedans des valeurs** sans avoir besoin de faire de la concaténation (_ce qu'on va voir au prochain paragraphe_)
+- **mais surtout injecter dedans des valeurs** sans avoir besoin de faire de la concaténation (_ce qu'on va voir au prochain paragraphe_)
 
 
 ### D.2.2. Concaténation
@@ -107,9 +107,9 @@ const serieName = 'Better Call ' + lawyer;
 
 ### D.2.3. Principales propriétés et méthodes
 
-Les chaînes de caractères disposent de beaucoup de propriétés et méthodes (_cf. [le mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)_), mais voici quelques exemples de propriété et méthodes qui pourront vous être utiles.
+Les chaînes de caractères disposent de beaucoup de propriétés et méthodes (_cf. [le mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)_), mais voici quelques exemples de propriétés et méthodes qui pourront vous être utiles.
 
-A votre avis, quelles sont les valeurs qui vont être retournées pour chaque ligne du console.log suivant ?
+A votre avis (_et sans tricher_ 😉), quelles sont les valeurs qui vont être retournées pour chaque ligne du console.log suivant ?
 
 ```js
 const serie = 'Better Call Saul';
@@ -145,7 +145,7 @@ Vérifiez si vous aviez vu juste en tapant le code dans la console !
 
 3. **Créez une constante nommée `url`.** Sa valeur initiale sera la concaténation de :
 	- la chaîne de caractères `'images/'`,
-	- la valeur de la variable `name` transformée en minuscules à l'aide de la méthode `.toLowerCase()` (_cf. [la doc de `toLowerCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)_) et dont les espaces sont remplacés par des tirets `-` (_On n'a pas vu récemment une méthode qui permettait de remplacer des caractères par un autre ?_ 🤔)
+	- la valeur de la constante `name` transformée en minuscules à l'aide de la méthode `.toLowerCase()` (_cf. [la doc de `toLowerCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)_) et dont les espaces sont remplacés par des tirets `-` (_On n'a pas vu récemment une méthode qui permettait de remplacer des caractères par un autre ?_ 🤔)
 	- et de la chaîne de caractères `'.jpg'`
 
 	Affichez la valeur de `url` dans la console, à l'aide de l'instruction `console.log(url);`, vous devez obtenir :
@@ -217,13 +217,13 @@ La fonction globale [`window.prompt()` (_mdn_)](https://developer.mozilla.org/en
 Essayez par exemple d'ajouter dans votre `main.js` le code suivant :
 
 ```js
-const value = window.prompt('Que voulez vous afficher dans la console ?');
+const value = window.prompt('Que voulez-vous afficher dans la console ?');
 console.log(`Voici ce que vous avez saisi : ${value}`);
 ```
 
 Vérifiez que la chaîne que vous saisissez dans la popup s'affiche bien ensuite dans la console.
 
-Maintenant faites en sorte que la valeur de la constante `name` ne soit plus `'Mario Kart 8 Deluxe'` en dur, mais récupérée à l'aide de `window.prompt()`.
+Maintenant, faites en sorte que la valeur de la constante `name` ne soit plus `'Mario Kart 8 Deluxe'` en dur, mais récupérée à l'aide de `window.prompt()`.
 
 > _**NB :** si vous regardez le contenu du dossier `/images` du TP, vous trouverez quelques noms de jeux vidéos que vous pouvez saisir dans le prompt pour qu'une image s'affiche bien dans la page_ 😎
 

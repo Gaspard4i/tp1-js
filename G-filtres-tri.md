@@ -44,7 +44,7 @@ const { firstName, lastName, age } = character;
 
 Pour que ça marche, il faut bien sûr que les constantes qu'on crée (_ici `firstName`, etc._) aient exactement le même nom que les propriétés de l'objet qu'on décompose (_même si un [système d'alias existe](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition#Affecter_avec_un_nom_diff%C3%A9rent)_).
 
-Dans les 2 situations (avec et sans destructuring) le résultat est le même : on crée au final trois constantes, dont les valeurs sont celles des propriétés de l'objet `character`.
+Dans les 2 situations (_avec ou sans destructuring_) le résultat est le même : on crée au final trois constantes, dont les valeurs sont celles des propriétés de l'objet `character`.
 
 > _**NB :** le destructuring fonctionne avec des `const` comme dans les exemples ci-dessus mais bien entendu aussi avec des `let` !_
 
@@ -130,7 +130,7 @@ Ce serait tellement mieux si les dates étaient formatées en français !
 
 <img src="images/readme/screen-released-locale.png" />
 
-> _**Indice :** Plutôt que de vous casser la tête avec les méthodes des chaînes de caractères, regardez un peu du côté de la [classe Date (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), vous verrez elle a des méthodes de localisation qui peuvent être utiles..._
+> _**Indice :** Plutôt que de vous casser la tête avec les méthodes des chaînes de caractères, regardez un peu du côté de la [classe Date (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), vous verrez, elle a des méthodes de localisation qui peuvent être utiles..._
 
 <br/>
 <br/>
@@ -138,5 +138,5 @@ Ce serait tellement mieux si les dates étaient formatées en français !
 
 <img src="images/readme/screen-final.png" />
 
-_**Voilà ! C'est terminé, vous avez atteint la fin de ce TP, félicitation !!!**_ \
+_**Voilà ! C'est terminé, vous avez atteint la fin de ce TP, félicitations !!!**_ \
 _**RDV dans quelques jours pour le prochain chapitre !**_ 🥳

@@ -33,7 +33,7 @@ On pourrait, pour cet exercice, utiliser n'importe quel serveur http (apache, to
 
 	<img src="images/readme/screen-00.png" />
 
-	> _**NB :** Si la page ne s'affiche pas correctement, vérifiez que vous avez bien lancé votre serveur Node avec npx dans **le bon dossier** (c'est à dire celui où se trouve le fichier `index.html`)._
+	> _**NB :** Si la page ne s'affiche pas correctement, vérifiez que vous avez bien lancé votre serveur Node avec npx dans **le bon dossier** (c'est-à-dire celui où se trouve le fichier `index.html`)._
 
 ## B.2. Inclure le JS dans la page
 
@@ -44,7 +44,7 @@ Ouvrez le d'abord dans VSCodium pour voir à quoi il ressemble à l'aide du racc
 **Incluez ensuite le fichier `src/main.js` dans le fichier `index.html`** à l'aide d'une balise `<script>`.
 
 > _**NB :** il existe plusieurs manières d'intégrer du code JavaScript dans une page HTML :_
-> - _**en "inline"** c'est à dire directement dans les attributs d'une balise. Dans l'exemple ci-dessous, le code JS s'exécutera lorsque l'utilisateur cliquera sur le lien :_
+> - _**en "inline"** c'est-à-dire directement dans les attributs d'une balise. Dans l'exemple ci-dessous, le code JS s'exécutera lorsque l'utilisateur cliquera sur le lien :_
 >	```html
 >	<a href="#" onclick="alert('Welcome to Albuquerque');return false;">
 >		BB

@@ -15,7 +15,7 @@
 
 **Cette Spec a connu un tournant avec la version ES6 (_sortie en 2015_) qui a révolutionné le développement JS en apportant tout un tas de nouveautés** (_c'est en partie ce qui fait qu'aujourd'hui, non **JS n'est PAS un langage "merdique"**_)
 
-Depuis cette version ES6 (aussi appelée ES2015), une nouvelle version d'ECMAScript sort **tous les ans** ! Par exemple, cette année nous aurons en juin ES14/ES2023 !
+Depuis cette version ES6 (aussi appelée ES2015), une nouvelle version d'ECMAScript sort **tous les ans** ! Par exemple, cette année nous aurons en juin ES15/ES2024 !
 
 ## F.2. Le problème de la compatibilité
 
@@ -25,7 +25,7 @@ Par exemple Internet Explorer 11, sorti en 2013, n'est pas capable d'interpréte
 Vous me direz que ce n'est pas grave puisque [IE est enfin mort](https://blogs.windows.com/windowsexperience/2022/06/15/internet-explorer-11-has-retired-and-is-officially-out-of-support-what-you-need-to-know/)...
 
 **Malheureusement le problème se pose aussi avec des navigateurs plus récents** si l'on utilise des syntaxes encore plus récentes. \
-Par exemple les [propriétés privées (_mdn_)](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes/Private_class_fields) qui sont sorties en juin 2022 avec ES13 (_et que l'on abordera dans le chapitre sur la POO_) ne sont prises en charge qu'à partir de la version 84 de Chrome : https://caniuse.com/mdn-javascript_classes_private_class_fields
+Par exemple la [méthode Array.toSorted (_mdn_)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted) qui est sortie en juin 2023 avec ES14 n'est prise en charge qu'à partir de la version 110 de Chrome : https://caniuse.com/mdn-javascript_builtins_array_tosorted
 
 
 Jusque là dans ce TP vous n'avez pas eu de soucis car toutes les syntaxes ECMAScript qu'on a utilisé sont **supportées** par les dernières versions de chrome/firefox/safari. \
@@ -52,7 +52,7 @@ En fait, il compile du code JS **ES6+** (_tout beau tout neuf, avec toutes les f
 
 Grâce à Babel on peut donc **coder avec toutes les syntaxes qu'on souhaite sans se préoccuper du support navigateur** car Babel va se charger de rendre notre code compatible avec les vieux navigateurs ! Merci Babel !
 
-Pour avoir un aperçu de comment fonctionne Babel, je vous invite à vous rendre sur [cette page : babeljs.io/repl#?browsers=&build=&builtIns=false&c...](https://babeljs.io/repl#?browsers=&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=PTAEEECdIewd1AMwK4DsDGAXAljVAoAGwFNNQBnAR2QENJjQBeUADyYD5XQAqVgblD58IUOjzlM-MagmhsTCtTrEAFABYATAEo-w4POYBGDQJHFoxZJFAATBmIC2AB2yEaOPBXk2Al44fEqJg-oCrSEjRBxFpCIiRk5GJOPviIMNYqoPFyCgAMAvIAPKDGoAUA1OWgWgDe-KCi4jAkAHSEMADmKtg69XKIoZiQyNF1DQ3ZBqAArLrjjTLNxG2d3b0NAL74W3q2xBLDWFbYqB34MApjoDQAXKAARDT3ADR9AEZ3928v27rZNTRnqA3hsFDBdEA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=false&presets=env&prettier=false&targets=&version=7.20.12&externalPlugins=&assumptions=%7B%7D). Vous verrez à gauche un exemple de code ES6+ et à droite sa version compilée par Babel en ES5 !
+Pour avoir un aperçu de comment fonctionne Babel, je vous invite à vous rendre sur [cette page : babeljs.io/repl#?browsers=&build=&builtIns=false&c...](https://babeljs.io/repl#?browsers=&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=PTAEEECdIewd1AMwK4DsDGAXAljVAoAGwFNNQBnAR2QENJjQBeUADyYD5XQAqVgblD58IUOjzlM-MagmhsTCtTrEAFABYATAEo-w4POYBGDQJHFoxZJFAATBmIC2AB2yEaOPBXk2Al44fEqJg-oCrSEjRBxFpCIiRk5GJOPviIMNYqoPFyCgAMAvIAPKDGoAUA1OWgWgDe-KCi4jAkAHSEMADmKtg69XKIoZiQyNF1DQ3ZBqAArLrjjTLNxG2d3b0NAL74W3q2xBLDWFbYqB34MApjoDQAXKAARDT3ADR9AEZ3928v27rZNTRnqA3hsFDBdEA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=false&presets=env&prettier=false&targets=&version=7.20.12&externalPlugins=&assumptions=%7B%7D). Vous verrez à gauche un exemple de code ES6+ et à droite sa version compilée par Babel en ES5 (_tapez juste un espace ou un retour à la ligne dans le panneau de gauche pour rafraîchir le code compilé_) !
 
 <img src="images/readme/babeljs.repl.png">
 
@@ -75,17 +75,17 @@ Pour l'installer on va utiliser npm (_Node Package Manager - l'outil fourni avec
 	```
 	Répondez alors aux questions qui vous sont posées (_donnez le nom "jsteam" au projet, vous pouvez ensuite taper <kbd>Entrée</kbd> pour toutes les autres questions_). À la fin du questionnaire vous verrez qu'un fichier `package.json` a été créé. Celui-ci nous sera utile par la suite.
 
-3. **Installez babel :**
+3. **Installez Babel :**
 	```bash
 	npm install --save-dev @babel/core @babel/cli
 	```
 	Ouvrez le fichier `package.json` dans VSCodium (<kbd>CTRL</kbd>+<kbd>P</kbd>). Vous noterez que les paquets `@babel/core` et `@babel/cli` ont été rajoutés dans les dépendances du projet !
 
-	Vous pourrez aussi remarquer qu'un dossier `node_modules` a également été créé. C'est lui qui contient le code de toutes les dépendances du projet (toutes les librairies js qu'on a installé avec npm).
+	Vous pourrez aussi remarquer qu'un dossier `node_modules` a également été créé. C'est lui qui contient le code de toutes les dépendances du projet (_toutes les librairies js qu'on a installé avec npm_).
 
 4. **Installez le preset `env` :**
 
-	Un **preset** est une sorte de dictionnaire qui indique à babel la syntaxe à compiler (_sans preset, Babel n'applique aucune modification au code source_). Le preset `env` permet de transpiler **toutes les features officielle ES6+ en ES5** (c'est une sorte de dictionnaire de traduction ES6+ -> ES5) :
+	Un **preset** est une sorte de dictionnaire qui indique à Babel la syntaxe à compiler (_sans preset, Babel n'applique aucune modification au code source_). Le preset `env` permet de transpiler **toutes les features officielle ES6+ en ES5** (_c'est donc un "dictionnaire" de traduction ES6+ -> ES5_) :
 	```bash
 	npm install --save-dev @babel/preset-env
 	```
@@ -108,9 +108,10 @@ Pour l'installer on va utiliser npm (_Node Package Manager - l'outil fourni avec
 
 	Cette commande va créer un dossier `build` dans lequel sera placé le fichier `main.js` compilé !
 
-	Vérifiez que le fichier `build/main.js` est bien compilé et qu'il ne reste plus de traces de code ES6 (const, let, ...). Si ce n'est pas le cas (s'il reste des `const`, des template strings ou des arrow functions), c'est que le `.babelrc` est mal configuré ou que vous avez raté une étape !
+	Vérifiez que le fichier `build/main.js` est bien compilé et qu'il ne reste plus de traces de code ES6 (`const`, `let`, ...). \
+	Si ce n'est pas le cas (_c'est-à-dire s'il reste des `const`, des template strings ou des arrow functions_), c'est que le `.babelrc` est mal configuré ou que vous avez raté une étape !
 
-	Enfin, ajoutez le dossier build à votre `.gitignore` (tout fichier qui peut être généré à partir des fichiers déjà présents dans le repo git ne doit pas être versionné) cf. https://git-scm.com/docs/gitignore
+	Enfin, si le `build/main.js` est bien compilé, ajoutez le dossier `build` à votre `.gitignore` (_tout fichier qui peut être généré à partir des fichiers déjà présents dans le repo git ne doit pas être versionné_) cf. https://git-scm.com/docs/gitignore
 
 2. **Une fois le fichier `build/main.js` créé, modifiez le fichier `index.html` pour charger ce fichier à la place du `src/main.js`.** Rechargez la page pour vérifier que tout fonctionne toujours correctement !
 

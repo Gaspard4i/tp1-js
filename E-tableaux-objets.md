@@ -81,7 +81,7 @@ Le résultat obtenu sera identique dans les 4 cas :
 Pour rappel, les objets littéraux sont des objets qu'on crée sans passer par une classe, donc sans passer par un constructeur. C'est en quelque sorte un espèce d'objet "vierge" dans lequel on peut ajouter des propriétés un peu comme on veut.
 
 En JS ces objets littéraux sont souvent utilisés comme source de données, un peu comme des "dictionnaires" ou des "hashmap" dans d'autres langages. \
-C'est ce qu'on va faire ici : utiliser des objets littéraux pour "décrire" chaque jeu qu'on veut afficher dans la page.
+C'est justement ce qu'on va faire ici : utiliser des objets littéraux pour "décrire" chaque jeu qu'on veut afficher dans la page.
 
 1. **Modifiez le tableau `data` :** au lieu de 3 chaînes de caractères, on va maintenant y mettre 3 objets littéraux :
 

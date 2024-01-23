@@ -62,6 +62,7 @@ console.log('Hold', 'the', what );
 
 	Une flèche bleue a du s'afficher à côté du numéro de ligne ce qui signifie qu'un breakpoint a été ajouté. Comme le code en question s'est déjà exécuté (_puisque notre JS se lance au chargement de la page_), rechargez la page pour que le code s'exécute à nouveau et déclenche cette fois notre breakpoint.
 
+
 	**Une fois la page rechargée, l'exécution est maintenant interrompue**, et il est possible de voir à droite, dans l'onglet "Scope", les valeurs des variables locales et notamment de la constante `what`. Vous pouvez aussi consulter la valeur des variables au survol de la variable directement dans le code !
 
 	<img src="images/readme/devtools-breakpoint.png" >
@@ -73,7 +74,7 @@ console.log('Hold', 'the', what );
 
 2. **L'instruction `debugger;`**
 
-	Au lieu d'ajouter manuellement un breakpoint comme on vient de le faire, il est possible de déclarer un breakpoint directement dans le code à l'aide d'un instruction JS : `debugger;`.
+	Au lieu d'ajouter manuellement un breakpoint comme on vient de le faire, il est possible de déclarer un breakpoint directement dans le code à l'aide d'une instruction JS : `debugger;`.
 
 	Modifiez le code de votre application comme ceci : (_notez l'instruction `debugger` qu'on a insérée entre les 2 lignes de code de notre fichier_)
 	```js
@@ -84,7 +85,7 @@ console.log('Hold', 'the', what );
 
 	Rechargez la page à nouveau avec les devtools ouverts, et constatez que l'exécution s'est arrêtée automatiquement sans avoir eu besoin de mettre de point d'arrêt manuel ! Pratique !
 
-	Voilà, vous connaissez les principales façons de mettre des breakpoints, supprimez les 3 lignes du `main.js` qu'on a rajouté (`const what; ....`).
+	Voilà, vous connaissez les principales façons de mettre des breakpoints, vous pouvez maintenant supprimer les 3 lignes du `main.js` qu'on a rajouté (`const what; ....`).
 
 ## Étape suivante <!-- omit in toc -->
 Maintenant que vous avez vu les principaux devtools offerts par les navigateurs, attaquons nous au code à proprement parler avec quelques exercices sur les chaînes de caractères : [D. Les chaînes de caractères](D-chaines.md)
