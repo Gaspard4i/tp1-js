@@ -180,9 +180,9 @@ Vérifiez si vous aviez vu juste en tapant le code dans la console !
 
 1. Même si nous n'avons pas encore vu comment manipuler la page html grâce à l'API DOM (_prochain cours_), vous trouverez ci-dessous le code qui va permettre d'injecter notre balise `<a>` dans la page. **A la fin de votre code, ajoutez donc l'instruction suivante :**
 	```js
-	document.querySelector('.gameList').innerHTML = html;
+	document.querySelector('.gameList .results').innerHTML = html;
 	```
-	Cette instruction va injecter le code HTML contenu dans la variable `html` à l'intérieur de la balise de classe CSS `"gameList"`.
+	Cette instruction va injecter le code HTML contenu dans la variable `html` à l'intérieur de la balise de classe CSS `"results"`.
 
 	Si tout s'est bien passé, vous devriez désormais :
 	- voir le texte 'images/mario-kart-8-deluxe.jpg' dans la page de votre navigateur.
@@ -279,7 +279,7 @@ Le code de votre `main.js` devra ressembler à ceci :
 ```js
 const name = window.prompt('Quel jeu voulez vous ?');
 const html = renderGameThumbnail(name);
-document.querySelector('.gameList').innerHTML = html;
+document.querySelector('.gameList .results').innerHTML = html;
 ```
 
 Une fois que ça fonctionne, pour éviter d'avoir un prompt à chaque rechargement de page, commentez la ligne du prompt et remettez une valeur en dur dans la constante `name` :
