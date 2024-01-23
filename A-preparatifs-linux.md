@@ -42,7 +42,7 @@ Vous allez donc avoir besoin d'installer Node vous même, sans droit d'admin, da
 	> [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 	> [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 	> ```
-	> Puis relancez
+	> _Puis relancez_
 	> ```bash
 	> source ~/.bashrc
 	> ```

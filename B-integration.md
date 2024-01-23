@@ -50,11 +50,11 @@ Ouvrez le d'abord dans VSCodium pour voir à quoi il ressemble à l'aide du racc
 >		BB
 >	</a>
 >	```
-> - **dans une balise `<script>`.** Le code s'exécute alors au chargement de la page, au moment où le navigateur arrive à cette ligne (le navigateur parse le document html de haut en bas):
+> - _**dans une balise `<script>`.** Le code s'exécute alors au chargement de la page, au moment où le navigateur arrive à cette ligne (le navigateur parse le document html de haut en bas):_
 > 	```html
 > 	<script>alert('Welcome to Albuquerque');</script>
 > 	```
-> - **dans une balise `<script>` avec un attribut `src`**. Dans ce cas le code JS peut alors être externalisé dans un fichier distinct. Le code s'exécute lorsque le fichier est chargé :
+> - _**dans une balise `<script>` avec un attribut `src`**. Dans ce cas le code JS peut alors être externalisé dans un fichier distinct. Le code s'exécute lorsque le fichier est chargé :_
 > 	```html
 > 	<script src="welcome.js"></script>
 > 	```

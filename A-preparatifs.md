@@ -30,7 +30,7 @@ Dans ce cas il vous faudra installer :
 	>
 	> <img src="images/readme/node-install.png" >
 	>
-	> Cette case permettra d'installer des dépendances utiles pour un futur TP (notamment python et les visual c++ build tools).
+	> _Cette case permettra d'installer des dépendances utiles pour un futur TP (notamment python et les visual c++ build tools)._
 
 - **VSCodium** https://vscodium.com ou **VSCode** https://code.visualstudio.com
 	> _**NB :** Si vous avez déjà VSCode, ça fera très bien l'affaire, VSCodium et VSCode sont quasi identiques (_cf. [A.4. VSCod[e/ium]](#a4-vscodeium)_) !_
@@ -56,10 +56,10 @@ _**Allons y !**_
 	Pour le `namespace` choisissez de placer le fork dans votre profil utilisateur.\
 	Pour `Visibility Level` selectionnez le **mode "private"**
 
-2. **Ajoutez-votre encadrant de TP en tant que "reporter" pour qu'il ait accès à votre code :**
-	- dans le menu de gauche, cliquez sur **`Project information`** > **`Members`**
-	- cliquez sur le bouton en haut à droite **`"Invite members"`**
-	- entrez comme **nom d'utilisateur** celui de votre encadrant de TP (`@patricia.everaere-caillier` ou `@thomas.fritsch`)
+2. **Ajoutez votre encadrant de TP en tant que "reporter" pour qu'il ait accès à votre code :**
+	- dans le menu de gauche, cliquez sur **`Manage`** &gt; **`Members`** (`Gestion` &gt; `Membres` _si vous êtes sur la VF de gitlab_)
+	- cliquez sur le bouton en haut à droite **`"Invite members"`** (`Inviter des membres`)
+	- entrez comme **nom d'utilisateur** celui de votre encadrant.e de TP (`@patricia.everaere-caillier` ou `@thomas.fritsch`)
 	- ... et `"reporter"` comme **rôle**.
 
 3. **Ouvrez ensuite un terminal et récupérez les fichiers de ce TP grâce à Git en clonant votre fork dans un dossier de votre choix** (_dans mon exemple ~/tps-js_) :
