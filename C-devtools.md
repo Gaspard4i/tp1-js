@@ -88,4 +88,4 @@ console.log('Hold', 'the', what );
 	Voilà, vous connaissez les principales façons de mettre des breakpoints, vous pouvez maintenant supprimer les 3 lignes du `main.js` qu'on a rajouté (`const what; ....`).
 
 ## Étape suivante <!-- omit in toc -->
-Maintenant que vous avez vu les principaux devtools offerts par les navigateurs, attaquons nous au code à proprement parler avec quelques exercices sur les chaînes de caractères : [D. Les chaînes de caractères](D-chaines.md)
+Maintenant que vous avez vu les principaux devtools offerts par les navigateurs, attaquons-nous au code à proprement parler avec quelques exercices sur les chaînes de caractères : [D. Les chaînes de caractères](D-chaines.md)
