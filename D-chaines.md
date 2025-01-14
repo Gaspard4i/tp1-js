@@ -163,13 +163,13 @@ Vérifiez si vous aviez vu juste en tapant le code dans la console !
 
 	Votre code devra permettre d'assigner dans la variable `html` une chaîne qui corresponde au code HTML d'une balise `<a>` (*lien hypertexte*) :
 	- L'URL du lien (*attribut `href`*) devra correspondre à la valeur de la constante `url`.
-	- Le contenu de la balise `<a>` correspondra lui à la valeur de la constante `url`
+	- Le contenu de la balise `<a>` correspondra lui aussi à la valeur de la constante `url`
 
 	```bash
 	'<a href="images/mario-kart-8-deluxe.jpg">images/mario-kart-8-deluxe.jpg</a>'
 	```
 
-	Affichez dans la console la valeur de la variable html pour vérifier que le résultat est bien conforme à la chaîne indiquée ci-dessus.
+	Affichez dans la console la valeur de la variable `html` pour vérifier que le résultat est bien conforme à la chaîne indiquée ci-dessus.
 
 	> _**NB:** pour cet exercice, les template strings sont vraiment pratiques !_
 
@@ -191,7 +191,7 @@ Vérifiez si vous aviez vu juste en tapant le code dans la console !
 	<img src="images/readme/screen-chaines-ahref.png" />
 
 2. **Modifiez encore la variable html avant son affichage** en remplaçant le texte contenu dans la balise `<a>` par
-	- **une balise `<img>`** dont la source (_attribut `src`_) sera la chaîne `images/mario-kart-8-deluxe.jpg`
+	- **une balise `<img>`** dont la source (_attribut `src`_) sera la chaîne calculée précédemment `images/mario-kart-8-deluxe.jpg`
 	- **une balise `<footer>`** contenant la constante `name`
 
 	Contrôlez dans l'inspecteur d'éléments que le résultat obtenu est bien :

@@ -15,7 +15,7 @@
 
 **Cette Spec a connu un tournant avec la version ES6 (_sortie en 2015_) qui a révolutionné le développement JS en apportant tout un tas de nouveautés** (_c'est en partie ce qui fait qu'aujourd'hui, non **JS n'est PAS un langage "merdique"**_)
 
-Depuis cette version ES6 (aussi appelée ES2015), une nouvelle version d'ECMAScript sort **tous les ans** ! Par exemple, cette année nous aurons en juin ES15/ES2024 !
+Depuis cette version ES6 (_aussi appelée ES2015_), une nouvelle version d'ECMAScript sort **tous les ans** ! Par exemple, cette année nous aurons en juin ES15/ES2024 !
 
 ## F.2. Le problème de la compatibilité
 
