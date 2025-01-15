@@ -102,7 +102,7 @@ Pour l'installer on va utiliser npm (_Node Package Manager - l'outil fourni avec
 		"presets": ["@babel/env"]
 	}
 	```
-	> <details><summary>⚠️ <em>Attention, le nom du fichier à créer est bien **`.babelrc`** !</em></summary>
+	> <details><summary>⚠️ <em>Attention, le nom du fichier à créer est bien <strong><code>.babelrc</code></strong> !</em></summary>
 	>
 	> _Si vous êtes sous Windows vous ne pourrez pas créer ce fichier avec l'explorateur de fichiers (Windows vous oblige à choisir un nom de fichier de la forme `nom-du-fichier.extension`) utilisez donc VSCodium pour ça : <kbd>CTRL</kbd>+<kbd>N</kbd> puis <kbd>CTRL</kbd>+<kbd>S</kbd>._
 	> </details>
