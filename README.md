@@ -1,6 +1,6 @@
 <img src="images/readme/header.jpg">
 
-## Objectifs
+## 🎯 Objectifs
 - Mettre en place un environnement de développement JS
 - prendre en main les outils de debug (devtools)
 - manipuler les types et fonctions de base de JavaScript

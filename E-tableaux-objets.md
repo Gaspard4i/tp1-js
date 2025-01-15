@@ -118,7 +118,7 @@ C'est justement ce qu'on va faire ici : utiliser des objets littéraux pour "dé
 
 	Faites en sorte que le code de renderGameThumbnail continue de fonctionner comme avant. Là aussi pas de changement de rendu.
 
-	> _**NB :** notez que maintenant qu'on a une propriété "`background-image`", il n'est plus nécessaire de calculer nous-même l'url de l'image !_
+	> 💡 _Notez que maintenant qu'on a une propriété "`background-image`", il n'est plus nécessaire de calculer nous-même l'url de l'image !_
 
 4. **Pour terminer, modifiez la fonction `renderGameThumbnail` en utilisant toutes les propriétés de l'objet qu'elle reçoit pour générer (pour chaque cellule) un code HTML de ce type :**
 	```html

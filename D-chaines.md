@@ -42,11 +42,14 @@ https://www.w3schools.com/js/
 
 Ce site est souvent remonté dans les moteur de recherche quand il est question de JS, c'est aussi une bonne référence dans le dev JS même s'il est moins complet que le MDN.
 
-> _**A savoir :** contrairement à ce qu'on pourrait penser, w3schools n'a rien à voir avec le W3C (le consortium qui est chargé de la spec HTML, CSS, etc.). W3Schools est géré par une boîte privée totalement indépendante._
+> <details><summary>ℹ️ <em>"W3Schools" ça a quelque chose à voir avec le W3C ?</em></summary>
+>
+> _**Pas du tout !** Contrairement à ce qu'on pourrait penser vu le nom, w3schools n'a rien à voir avec le W3C (le consortium qui est chargé des specs HTML, CSS, etc.). W3Schools est géré par une boîte privée totalement indépendante :_
+>
+> > _"W3Schools was created in 1998, and derives its name from the World Wide Web (WWW) **but is not affiliated with the W3C**."_
 >
 > _source: https://www.w3schools.com/about/_
->
-> _"W3Schools was created in 1998, and derives its name from the World Wide Web (WWW) **but is not affiliated with the W3C**."_
+> </details>
 
 
 
@@ -155,9 +158,12 @@ Vérifiez si vous aviez vu juste en tapant le code dans la console !
 
 	<img src="images/readme/screen-chaines-url.png" />
 
-	> _**NB :** Vous verrez que vscode vous **"barre" la constante name en vous disant qu'elle est dépréciée**._
+	> <details><summary>ℹ️ <em>Pourquoi vscode "barre" la constante <del>name</del> ?</em></summary>
 	>
-	> _En effet vscode croit qu'on utilise ici la variable globale [`window.name` (mdn)](https://developer.mozilla.org/en-US/docs/Web/API/Window/name) qu'il considère comme dépréciée. Hors vscode se trompe car nous utilisons une constante `name` déclarée localement. Vous pouvez donc ignorer ce warning pour le moment (on va bientôt changer tout ça de toute façon)_
+	> _Effectivement, vscode vous **"barre" la constante `name` en vous disant qu'elle est dépréciée**._
+	>
+	> _C'est parce que vscode croit qu'on utilise ici la variable globale [`window.name` (mdn)](https://developer.mozilla.org/en-US/docs/Web/API/Window/name) qu'il considère comme dépréciée. Hors vscode se trompe car nous utilisons une constante `name` déclarée localement. Vous pouvez donc ignorer ce warning pour le moment (on va bientôt changer tout ça de toute façon)._
+	> </details>
 
 4. **Sur la ligne suivante, créez une variable nommée `html`** :
 
@@ -171,7 +177,7 @@ Vérifiez si vous aviez vu juste en tapant le code dans la console !
 
 	Affichez dans la console la valeur de la variable `html` pour vérifier que le résultat est bien conforme à la chaîne indiquée ci-dessus.
 
-	> _**NB:** pour cet exercice, les template strings sont vraiment pratiques !_
+	> 💡 _**Pro tip :** pour cet exercice, les template strings sont vraiment pratiques !_
 
 
 ## D.4. Injection dans la page HTML
@@ -225,7 +231,7 @@ Vérifiez que la chaîne que vous saisissez dans la popup s'affiche bien ensuite
 
 Maintenant, faites en sorte que la valeur de la constante `name` ne soit plus `'Mario Kart 8 Deluxe'` en dur, mais récupérée à l'aide de `window.prompt()`.
 
-> _**NB :** si vous regardez le contenu du dossier `/images` du TP, vous trouverez quelques noms de jeux vidéos que vous pouvez saisir dans le prompt pour qu'une image s'affiche bien dans la page_ 😎
+> 💡 _Si vous regardez le contenu du dossier `/images` du TP, vous trouverez quelques noms de jeux vidéos que vous pouvez saisir dans le prompt pour qu'une image s'affiche bien dans la page_ 😎
 
 Si on tape "`God of War Ragnarok`" dans le prompt, alors l'affichage doit être :
 
@@ -250,24 +256,26 @@ const makeEpisode = (hero) => { // arrow function ("lambda")
 }
 ```
 
-Les 3 déclarations ont exactement le même effet : elles créent en mémoire une constante qui a le nom `"makeEpisode"` et qui contient une valeur de type [`Function` (_mdn_)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
-
+Ces 3 déclarations ont exactement le même effet : elles créent en mémoire une référence qui a le nom `"makeEpisode"` et qui contient une valeur de type [`Function` (_mdn_)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions). \
 Elles s'appellent donc toutes les 3 de la même manière :
 
 ```js
 const newEpisode = makeEpisode('Benjen Stark');
 ```
 
-> _**NB :** A propos des arrow functions, notez qu'il est dans certains cas possible de simplifier l'écriture :_
-> - _si le corps de la fonction ne contient qu'un return, on peut retirer les accolades et le mot clé return :_
-> 	```js
-> 	const makeEpisode = (hero) => `${hero} is dead !`;
->	```
-> - _si la fonction ne prend qu'un seul paramètre, on peut retirer les parenthèses autour :_
+> <details><summary>📖 <em>Comme vu en cours, on peut parfois simplifier l'écriture des <strong>arrow functions</strong>...</em></summary>
+>
+> - _si le corps de la fonction ne contient qu'un `return`, on peut alors retirer les accolades et le mot clé `return` :_
+> 	```ts
+> 	const makeEpisode = (hero) => `${hero} is dead !`; // return implicite
+> 	```
+> - _si la fonction n'a qu'un seul paramètre, on peut retirer les parenthèses autour :_
 > 	```js
 > 	const makeEpisode = hero => `${hero} is dead !`;
->	```
+> 	```
+>
 > _A nouveau, aucun changement sur la façon d'appeler la fonction. C'est totalement transparent lors de l'appel : `const newEpisode = makeEpisode('Benjen Stark');`_
+> </details>
 
 ### D.5.3. Mise en oeuvre
 

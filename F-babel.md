@@ -5,7 +5,7 @@
 ## Sommaire <!-- omit in toc -->
 - [F.1. Note à propos d'EcmaScript](#f1-note-à-propos-decmascript)
 - [F.2. Le problème de la compatibilité](#f2-le-problème-de-la-compatibilité)
-- [F.3. Le sauveur : Babel](#f3-le-sauveur-babel)
+- [F.3. Le sauveur : Babel](#f3-le-sauveur--babel)
 - [F.4. Installation et configuration](#f4-installation-et-configuration)
 - [F.5. Compilation](#f5-compilation)
 
@@ -15,7 +15,7 @@
 
 **Cette Spec a connu un tournant avec la version ES6 (_sortie en 2015_) qui a révolutionné le développement JS en apportant tout un tas de nouveautés** (_c'est en partie ce qui fait qu'aujourd'hui, non **JS n'est PAS un langage "merdique"**_)
 
-Depuis cette version ES6 (_aussi appelée ES2015_), une nouvelle version d'ECMAScript sort **tous les ans** ! Par exemple, cette année nous aurons en juin ES15/ES2024 !
+Depuis cette version ES6 (_aussi appelée ES2015_), une nouvelle version d'ECMAScript sort **tous les ans** ! Par exemple, cette année nous aurons en juin ES16/ES2025 !
 
 ## F.2. Le problème de la compatibilité
 
@@ -25,16 +25,20 @@ Par exemple Internet Explorer 11, sorti en 2013, n'est pas capable d'interpréte
 Vous me direz que ce n'est pas grave puisque [IE est enfin mort](https://blogs.windows.com/windowsexperience/2022/06/15/internet-explorer-11-has-retired-and-is-officially-out-of-support-what-you-need-to-know/)...
 
 **Malheureusement le problème se pose aussi avec des navigateurs plus récents** si l'on utilise des syntaxes encore plus récentes. \
-Par exemple la [méthode Array.toSorted (_mdn_)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted) qui est sortie en juin 2023 avec ES14 n'est prise en charge qu'à partir de la version 110 de Chrome : https://caniuse.com/mdn-javascript_builtins_array_tosorted
+Par exemple la [méthode Object.groupBy (_mdn_)](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy) qui est sortie en juin 2024 avec ES15 n'est prise en charge qu'à partir de la version 117 de Chrome : https://caniuse.com/mdn-javascript_builtins_object_groupby
 
 
 Jusque là dans ce TP vous n'avez pas eu de soucis car toutes les syntaxes ECMAScript qu'on a utilisé sont **supportées** par les dernières versions de chrome/firefox/safari. \
 **Mais si on publiait votre site en ligne, il y a fort à parier qu'il plantera LAMENTABLEMENT chez des internautes qui auraient des navigateurs plus anciens !** 😢
 
-> _**NB :** pour savoir quelles fonctionnalités ECMAScript sont supportées sur quel navigateur, jetez un oeil aux sites suivants :_
-> - _pour ES6 : http://kangax.github.io/compat-table/es6/_
-> - _pour ES7, ES8, ES9, etc. (ES2016+) : http://kangax.github.io/compat-table/es2016plus/_
-> - _pour les features en cours de spécification (parfois supportées par les navigateurs avant qu'elles ne soient officielles) : http://kangax.github.io/compat-table/esnext/_
+> <details><summary>ℹ️ <em>Comment on sait quel navigateur supporte quoi ?</em></summary>
+>
+> _Pour savoir quelles fonctionnalités ECMAScript sont supportées sur quel navigateur, vous pouvez utiliser le site compat-table :_
+>
+> - _pour ES6 : https://compat-table.github.io/compat-table/es6/_
+> - _pour ES7, ES8, ES9, etc. (ES2016+) : https://compat-table.github.io/compat-table/es2016plus/_
+> - _pour les features en cours de spécification (parfois supportées par les navigateurs avant qu'elles ne soient officielles) : https://compat-table.github.io/compat-table/esnext/_
+> </details>
 
 
 ## F.3. Le sauveur : Babel
@@ -63,7 +67,7 @@ Pour l'installer on va utiliser npm (_Node Package Manager - l'outil fourni avec
 
 1. **Tout d'abord, ouvrez un nouveau terminal intégré dans VSCodium** (_vous en avez normalement déjà un qui exécute le serveur http `npx serve -l 8000`_).
 
-	Je vous recommande d'utiliser ici [un terminal splitté](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-splitting) pour afficher deux terminaux côte à côte : tapez <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd> puis **`Terminal: split terminal`** ou **cliquez sur l'icône suivante** :
+	Je vous recommande d'utiliser ici [un terminal splitté](https://code.visualstudio.com/docs/terminal/basics#_groups-split-panes) pour afficher deux terminaux côte à côte : tapez <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd> puis **`Terminal: split terminal`** ou **cliquez sur l'icône suivante** :
 
 	<img src="images/readme/split-terminal.png" />
 
@@ -73,7 +77,9 @@ Pour l'installer on va utiliser npm (_Node Package Manager - l'outil fourni avec
 	```bash
 	npm init
 	```
-	Répondez alors aux questions qui vous sont posées (_donnez le nom "jsteam" au projet, vous pouvez ensuite taper <kbd>Entrée</kbd> pour toutes les autres questions_). À la fin du questionnaire vous verrez qu'un fichier `package.json` a été créé. Celui-ci nous sera utile par la suite.
+	Répondez alors aux questions qui vous sont posées (_donnez le nom "jsteam" au projet, vous pouvez ensuite taper <kbd>Entrée</kbd> pour toutes les autres questions_).
+
+	À la fin du questionnaire vous verrez qu'un fichier `package.json` a été créé. Celui-ci nous sera utile dans la suite du TP.
 
 3. **Installez Babel :**
 	```bash
@@ -81,7 +87,7 @@ Pour l'installer on va utiliser npm (_Node Package Manager - l'outil fourni avec
 	```
 	Ouvrez le fichier `package.json` dans VSCodium (<kbd>CTRL</kbd>+<kbd>P</kbd>). Vous noterez que les paquets `@babel/core` et `@babel/cli` ont été rajoutés dans les dépendances du projet !
 
-	Vous pourrez aussi remarquer qu'un dossier `node_modules` a également été créé. C'est lui qui contient le code de toutes les dépendances du projet (_toutes les librairies js qu'on a installé avec npm_).
+	Vous remarquerez aussi qu'un dossier `/node_modules` a également été créé à la racine du TP. C'est lui qui contient le code de toutes les dépendances du projet (_toutes les librairies js qu'on installera avec npm_) dont `@babel/core`.
 
 4. **Installez le preset `env` :**
 
@@ -96,7 +102,10 @@ Pour l'installer on va utiliser npm (_Node Package Manager - l'outil fourni avec
 		"presets": ["@babel/env"]
 	}
 	```
-	> _**NB :** le nom du fichier à créer est bien **`.babelrc`**. Si vous êtes sous windows vous ne pourrez pas créer ce fichier avec l'explorateur de fichiers (windows vous oblige à choisir un nom de fichier de la forme `nom-du-fichier.extension`) utilisez donc VSCodium pour ça : <kbd>CTRL</kbd>+<kbd>N</kbd> puis <kbd>CTRL</kbd>+<kbd>S</kbd>_
+	> <details><summary>⚠️ <em>Attention, le nom du fichier à créer est bien **`.babelrc`** !</em></summary>
+	>
+	> _Si vous êtes sous Windows vous ne pourrez pas créer ce fichier avec l'explorateur de fichiers (Windows vous oblige à choisir un nom de fichier de la forme `nom-du-fichier.extension`) utilisez donc VSCodium pour ça : <kbd>CTRL</kbd>+<kbd>N</kbd> puis <kbd>CTRL</kbd>+<kbd>S</kbd>._
+	> </details>
 
 ## F.5. Compilation
 1. **Vous pouvez maintenant compiler votre code ES6+ en ES5 à l'aide de la commande** :

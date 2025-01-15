@@ -1,10 +1,10 @@
 <img src="images/readme/header-small.jpg" >
 
-# G. Destructuring, filtres, tri et destructuring <!-- omit in toc -->
+# G. Destructuring, tri, filtres et dates <!-- omit in toc -->
 
 _**Pour cette dernière partie du TP, je vous propose d'aborder des sujets que l'on a pas vu en cours mais qui peuvent vous être extrêmement utiles pour les prochains TPs.**_
 
-> _Dans tout les exercices qui suivent, pensez à vérifier dans le terminal que votre code compile bien (absence d'erreur de compilation) et que c'est bien le fichier `build/main.js` que vous chargez dans votre `index.html` et pas celui du dossier `src`_
+> ⚠️ _Dans tous les exercices qui suivent, pensez à vérifier dans le terminal que votre code compile bien (absence d'erreur de compilation) et que c'est bien le fichier `build/main.js` que vous chargez dans votre `index.html` et pas celui du dossier `src` !_
 
 ## Sommaire <!-- omit in toc -->
 - [G.1. Destructuring](#g1-destructuring)
@@ -40,13 +40,13 @@ Et bien, avec le destructuring on va pouvoir faire exactement la même chose mai
 const { firstName, lastName, age } = character;
 ```
 
-> _Notez les accolades autour du nom des constantes : c'est la syntaxe pour faire du destructuring d'objets._
+> ℹ️ _Notez les **accolades** autour du nom des constantes : c'est la syntaxe pour faire du destructuring d'objets._
 
-Pour que ça marche, il faut bien sûr que les constantes qu'on crée (_ici `firstName`, etc._) aient exactement le même nom que les propriétés de l'objet qu'on décompose (_même si un [système d'alias existe](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition#Affecter_avec_un_nom_diff%C3%A9rent)_).
+Pour que ça marche, il faut bien sûr que les constantes qu'on crée (_ici `firstName`, etc._) aient **exactement** le même nom que les propriétés de l'objet qu'on décompose (_même si un [système d'alias existe](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition#Affecter_avec_un_nom_diff%C3%A9rent)_).
 
 Dans les 2 situations (_avec ou sans destructuring_) le résultat est le même : on crée au final trois constantes, dont les valeurs sont celles des propriétés de l'objet `character`.
 
-> _**NB :** le destructuring fonctionne avec des `const` comme dans les exemples ci-dessus mais bien entendu aussi avec des `let` !_
+> ℹ️ _Le destructuring fonctionne avec des `const` comme dans les exemples ci-dessus, mais bien entendu ça marche aussi avec des `let` !_
 
 _**C'est votre tour maintenant : appliquez le destructuring à l'intérieur de la fonction `renderGameThumbnail` !**_
 
@@ -130,7 +130,7 @@ Ce serait tellement mieux si les dates étaient formatées en français !
 
 <img src="images/readme/screen-released-locale.png" />
 
-> _**Indice :** Plutôt que de vous casser la tête avec les méthodes des chaînes de caractères, regardez un peu du côté de la [classe Date (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), vous verrez, elle a des méthodes de localisation qui peuvent être utiles..._
+> 💡 _**Indice :** plutôt que de vous casser la tête avec les méthodes des chaînes de caractères, regardez un peu du côté de la [classe Date (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), vous verrez, elle a des méthodes de localisation qui peuvent être utiles..._
 
 <br/>
 <br/>
