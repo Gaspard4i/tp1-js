@@ -49,7 +49,6 @@ Ce site est souvent remonté dans les moteur de recherche quand il est question 
 > > _"W3Schools was created in 1998, and derives its name from the World Wide Web (WWW) **but is not affiliated with the W3C**."_
 >
 > _source: https://www.w3schools.com/about/_
->
 > </details>
 
 
