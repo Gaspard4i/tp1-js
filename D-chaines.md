@@ -51,18 +51,6 @@ Ce site est souvent remonté dans les moteur de recherche quand il est question 
 > _source: https://www.w3schools.com/about/_
 > </details>
 
->>>
-<details><summary>ℹ️ <em>"W3Schools" ça a quelque chose à voir avec le W3C ?</em></summary>
-
- _**Pas du tout !** Contrairement à ce qu'on pourrait penser vu le nom, w3schools n'a rien à voir avec le W3C (le consortium qui est chargé des specs HTML, CSS, etc.). W3Schools est géré par une boîte privée totalement indépendante :_
-
- > _"W3Schools was created in 1998, and derives its name from the World Wide Web (WWW) **but is not affiliated with the W3C**."_
-
- _source: https://www.w3schools.com/about/_
-</details>
->>>
-
-
 
 
 ## D.2. Théorie des Chaînes
